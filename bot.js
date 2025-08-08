@@ -18,9 +18,12 @@ const N8N_WEBHOOK_URL = process.env.N8N_WEBHOOK_URL;
 client.on('messageCreate', async (message) => {
     if (message.author.bot) return;
 
+    // 👇 ทำงานเฉพาะเมื่อมีการ mention bot
+    if (!message.mentions.has(client.user)) return;
+
     const payload = {
         user: message.author.username,
-        content: message.content
+        content: message.content.replace(`<@${client.user.id}>`, '').trim()
     };
 
     console.log(payload);
