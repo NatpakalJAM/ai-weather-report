@@ -1,0 +1,25 @@
+{
+  "name": "ai-weather-report",
+  "version": "1.0.0",
+  "description": "AI Lab",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NatpakalJAM/ai-weather-report.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NatpakalJAM/ai-weather-report/issues"
+  },
+  "homepage": "https://github.com/NatpakalJAM/ai-weather-report#readme",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "discord.js": "^14.21.0",
+    "dotenv": "^17.2.1"
+  }
+}
