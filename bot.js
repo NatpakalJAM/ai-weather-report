@@ -34,3 +34,4 @@ client.on('messageCreate', async (message) => {
 });
 
 client.login(DISCORD_BOT_TOKEN);
+console.log('BOT START!!');
